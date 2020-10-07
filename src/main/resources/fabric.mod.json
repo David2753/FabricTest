@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric-test",
+  "version": "${version}",
+  "name": "Fabric Test",
+  "description": "",
+  "authors": [
+    "BlocksnBricks"
+  ],
+  "contact": {
+    "website": "https://david2753.github.io/"
+  },
+  "license": "MIT",
+  "icon": "assets/fabric-test/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "blocksnbrickstest.test.client.TestClient"
+    ],
+    "main": [
+      "blocksnbrickstest.test.Test"
+    ]
+  },
+  "mixins": [
+    "fabric-test.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.1+build.209",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
